@@ -165,6 +165,14 @@ codex plugin add ponytail@ponytail
 
 Then open `/hooks` in Codex, trust its two lifecycle hooks, and start a new thread.
 
+**Antigravity (CLI and IDE):**
+
+```bash
+agy plugin install https://github.com/DietrichGebert/ponytail
+```
+
+For the always-on ruleset, copy [`.agents/rules/ponytail.md`](.agents/rules/ponytail.md) into `.agent/rules/ponytail.md` (or [`AGENTS.md`](AGENTS.md)) in your project.
+
 **Any other agent:** copy [`AGENTS.md`](AGENTS.md) into your project, or ask your agent to install [`skills/ponytail/SKILL.md`](skills/ponytail/SKILL.md) as a skill. Step by step for Copilot, Cursor, OpenCode, Gemini and the rest: **[INSTALL.md](INSTALL.md)**.
 
 That was it. He'd be proud. He won't say it.
@@ -186,7 +194,7 @@ Only install ponytail from `DietrichGebert/ponytail` on GitHub or `@dietrichgebe
 | `/ponytail-gain` | Show the measured impact scoreboard (less code, less cost, more speed) from the benchmark. |
 | `/ponytail-help` | Quick reference for the commands above. |
 
-Commands need a skill-capable host (Claude Code, Codex, Devin CLI, OpenCode, Gemini, Antigravity CLI, pi, Hermes Agent, Qoder, Grok Build). In Codex CLI and the IDE extension they're skills under the plugin's namespace; invoke with `$ponytail:ponytail-review`. Cursor with the [hooks](INSTALL.md#cursor) gets `/ponytail` level switching only, typed as a plain message. The instruction-only adapters (Cursor's rule file, Windsurf, Cline, Copilot, Kiro, Antigravity's `AGENTS.md` fallback) load the always-on ruleset without the commands.
+Commands need a skill-capable host (Claude Code, Codex, Devin CLI, OpenCode, Gemini, Antigravity CLI and IDE, pi, Hermes Agent, Qoder, Grok Build). In Codex CLI and the IDE extension they're skills under the plugin's namespace; invoke with `$ponytail:ponytail-review`. Cursor with the [hooks](INSTALL.md#cursor) gets `/ponytail` level switching only, typed as a plain message. The instruction-only adapters (Cursor's rule file, Windsurf, Cline, Copilot, Kiro, Antigravity's `.agent/rules/ponytail.md` or `AGENTS.md` fallback) load the always-on ruleset without the commands.
 
 ## FAQ
 

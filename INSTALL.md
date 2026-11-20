@@ -118,7 +118,7 @@ For full plugin-tier support (automatic mode activation + ruleset injection on e
 agy plugin install https://github.com/DietrichGebert/ponytail
 ```
 
-Installs the six skills, and Antigravity turns the `/ponytail` commands into skills as well, so you [call them as slash commands](https://www.antigravity.google/docs/skills#slash-command-conversion) such as `/ponytail-review`. No lifecycle hooks, so levels don't persist. For the always-on ruleset, copy [`AGENTS.md`](AGENTS.md) into your project; Antigravity [reads it as workspace rules](https://www.antigravity.google/docs/rules). Install verified with Antigravity CLI 1.3.3.
+Installs the six skills, and Antigravity turns the `/ponytail` commands into skills as well, so you [call them as slash commands](https://www.antigravity.google/docs/skills#slash-command-conversion) such as `/ponytail-review`. No lifecycle hooks, so levels don't persist. For the always-on ruleset, copy [`AGENTS.md`](AGENTS.md) (or [`.agents/rules/ponytail.md`](.agents/rules/ponytail.md)) into your project; Antigravity [reads it as workspace rules](https://www.antigravity.google/docs/rules). In a checkout of this repo, [`.agents/skills.json`](.agents/skills.json) also exposes the six [`skills/`](skills/) directly to Antigravity IDE. Install verified with Antigravity CLI 1.3.3.
 
 ## Hermes Agent
 
@@ -207,7 +207,7 @@ Pick the agent with `--agent` (for IBM Bob: `--agent bob`), take all six without
 
 ## Other agents (rules file only)
 
-Cursor (rule-only alternative to the [hooks install](#cursor)), Windsurf, Cline, GitHub Copilot Chat (the VS Code, JetBrains, and Visual Studio editor extension, not the standalone [Copilot CLI](#github-copilot-cli)), Aider, Kiro, Zed, CodeWhale, Qoder: copy the matching rules file from this repo ([`.cursor/rules/`](.cursor/rules/), [`.windsurf/rules/`](.windsurf/rules/), [`.clinerules/`](.clinerules/), [`.github/copilot-instructions.md`](.github/copilot-instructions.md), [`AGENTS.md`](AGENTS.md), [`.kiro/steering/`](.kiro/steering/), [`.qoder/rules/`](.qoder/rules/)).
+Cursor (rule-only alternative to the [hooks install](#cursor)), Windsurf, Cline, GitHub Copilot Chat (the VS Code, JetBrains, and Visual Studio editor extension, not the standalone [Copilot CLI](#github-copilot-cli)), Aider, Kiro, Zed, CodeWhale, Qoder: copy the matching rules file from this repo ([`.cursor/rules/`](.cursor/rules/), [`.windsurf/rules/`](.windsurf/rules/), [`.clinerules/`](.clinerules/), [`.agents/rules/`](.agents/rules/), [`.github/copilot-instructions.md`](.github/copilot-instructions.md), [`AGENTS.md`](AGENTS.md), [`.kiro/steering/`](.kiro/steering/), [`.qoder/rules/`](.qoder/rules/)).
 
 Kiro: copy `.kiro/steering/ponytail.md` to `~/.kiro/steering/` (global) or `.kiro/steering/` in your project.
 
